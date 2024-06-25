@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body{
+  background-color: #F1F2F4;
+}
+
+h1{
+  font-family: "inter", sans-serif;
+  font-size: 56px;
+  line-height: 64px;
+  color: #18191C;
+  font-weight: 500;
+
+}
+
+h2{
+  font-family: "inter", sans-serif;
+  font-size: 24px;
+  line-height: 32px;
+  color: #18191C;
+  font-weight: 500;
+
+}
+p{
+  font-family: "inter", sans-serif;
+  color: #5E6670;
+  font-weight: 500;
+}
+
