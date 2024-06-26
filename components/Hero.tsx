@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import { CiSearch } from 'react-icons/ci';
 import { IoLocationOutline } from "react-icons/io5";
+import { statics } from '@/constants';
 
 
 
@@ -41,6 +42,19 @@ function Hero(){
                 <div className=''>
                     <Image src='/illustration.png' alt='' height={382} width={492} />
                 </div>
+            </div>
+            <div className='grid md:flex grid-cols-1 lg:grid-cols-4 justify-evenly items-center md:mx-auto '>
+            {statics.map((item, index) => (
+                    <div key={index} className='flex gap-4 bg-[#fbfbfb] hover:bg-white hover:shadow-lg p-4 w-[270px] rounded-[8px]'>
+                        <Image src={item.icon} alt='' width={72} height={72}/>
+                        <div className='grid'>
+                            <h2>{item.number}</h2>
+                            <p>{item.text}</p>
+                        </div>
+                    </div>
+                ))}
+                  
+                  
             </div>
         </div>
     );
