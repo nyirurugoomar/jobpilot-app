@@ -20,7 +20,7 @@ function JobCategories() {
           <div className='space-y-8' key={columnIndex}>
             {column.map((category, index) => (
               <div key={index}>
-                <h3 className='text-[18px] leading-[28px]'>{category.category}</h3>
+                <h3 className='text-[18px] leading-[28px] hover:underline decoration-primary decoration-2 underline-offset-4 cursor-pointer'>{category.category}</h3>
                 <p className='text-[14px] leading-[20px]'>{category.positionNumber} Open Positions</p>
               </div>
             ))}
