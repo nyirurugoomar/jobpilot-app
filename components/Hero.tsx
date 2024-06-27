@@ -8,13 +8,13 @@ import { statics } from '@/constants';
 
 function Hero(){
     return (
-        <div className='w-full md:mx-auto'>
-            <div className='grid grid-cols-1 lg:grid-cols-2 justify-center items-center mx-auto md:p-24 gap-28'>
+        <div className='md:w-full md:mx-auto'>
+            <div className='grid grid-cols-1 lg:grid-cols-2 justify-center items-center md:mx-aut mx-4 md:p-24 gap-28 p-4'>
                 <div className=''>
-                    <h1 className='text-[50px] font-bold '>Find a job that suits your interest & skills.</h1>
-                    <p className='text-base mt-4 leading-7 w-[536px]'>Aliquam vitae turpis in diam convallis finibus in at risus. Nullam in scelerisque leo, eget sollicitudin velit vestibulum.</p>
-                    <div className='mt-4 bg-white '>
-                        <form action='' className='md:flex p-2  '>
+                    <h1 className='md:text-[50px] text-[30px] font-bold md:leading-[64px] leading-10 '>Find a job that suits your interest & skills.</h1>
+                    <p className='text-base mt-4 leading-7 md:w-[536px]'>Aliquam vitae turpis in diam convallis finibus in at risus. Nullam in scelerisque leo, eget sollicitudin velit vestibulum.</p>
+                    <div className='mt-4 md:bg-white '>
+                        <form action='' className='md:flex p-2 grid md:space-y-0 space-y-4  '>
                             <div className='relative'>
                                 <input
                                     type='text'
@@ -43,9 +43,9 @@ function Hero(){
                     <Image src='/illustration.png' alt='' height={382} width={492} />
                 </div>
             </div>
-            <div className='grid md:flex grid-cols-1 lg:grid-cols-4 justify-evenly items-center md:mx-auto '>
+            <div className='grid md:flex grid-cols-1 lg:grid-cols-4 justify-evenly items-center md:mx-14 md:space-y-0 space-y-4 '>
             {statics.map((item, index) => (
-                    <div key={index} className='flex gap-4 bg-[#fbfbfb] hover:bg-white hover:shadow-lg p-4 w-[270px] rounded-[8px]'>
+                    <div key={index} className='flex gap-4 bg-[#fbfbfb] hover:bg-white hover:shadow-lg p-4 md:w-[270px] md:mx-auto mx-6  rounded-[8px]'>
                         <Image src={item.icon} alt='' width={72} height={72}/>
                         <div className='grid'>
                             <h2>{item.number}</h2>
