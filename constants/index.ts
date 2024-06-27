@@ -94,3 +94,46 @@ export const WorkProcess =[
         "info":"Curabitur sit amet maximus ligula. Nam a nulla ante, Nam sodales purus."
     }
 ]
+
+export const PopularCategory =[
+    {
+        "icon":"/icon-Design.png",
+        "title":"Graphics & Design",
+        "OpenPositon":"357"
+    },
+    {
+        "icon":"/icon-code.png",
+        "title":"Code & Programing",
+        "OpenPositon":"312"
+    },
+    {
+        "icon":"/icon-Digital.png",
+        "title":"Digital Marketing",
+        "OpenPositon":"463"
+    },
+    {
+        "icon":"/icon-Video.png",
+        "title":"Video & Animation",
+        "OpenPositon":"588"
+    },
+    {
+        "icon":"/icon-Music.png",
+        "title":"Music & Audio",
+        "OpenPositon":"184"
+    },
+    {
+        "icon":"/Icon-Account.png",
+        "title":"Account & Finance",
+        "OpenPositon":"534"
+    },
+    {
+        "icon":"/Icon-Health.png",
+        "title":"Health & Care",
+        "OpenPositon":"834"
+    },
+    {
+        "icon":"/Icon-Data.png",
+        "title":"Data & Science",
+        "OpenPositon":"834"
+    },
+]
