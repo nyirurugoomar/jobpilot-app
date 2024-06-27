@@ -71,3 +71,26 @@ export const Categories=[
         "positionNumber":"16,627"
     },
 ]
+
+export const WorkProcess =[
+    {
+        "icon":"/icon-person.png",
+        "title":"Create account",
+        "info":"Aliquam facilisis egestas sapien, nec tempor leo tristique at."
+    },
+    {
+        "icon":"/icon-upload.png",
+        "title":"Upload CV/Resume",
+        "info":"Curabitur sit amet maximus ligula. Nam a nulla ante. Nam sodales"
+    },
+    {
+        "icon":"/icon-search.png",
+        "title":"Find suitable job",
+        "info":"Phasellus quis eleifend ex. Morbi nec fringilla nibh."
+    },
+    {
+        "icon":"/icon-apply.png",
+        "title":"Apply job",
+        "info":"Curabitur sit amet maximus ligula. Nam a nulla ante, Nam sodales purus."
+    }
+]

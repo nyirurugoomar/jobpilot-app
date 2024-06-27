@@ -11,8 +11,8 @@ function JobCategories() {
   }
 
   return (
-    <div className='w-full md:mx-18 md:mt-20'>
-      <div className='md:ml-24'>
+    <div className='w-full md:mx-18 md:mt-20 bg-white md:p-20'>
+      <div className='md:ml-16'>
         <h1 className='text-[40px] md:leading-[48px]'>Most Popular Vacancies</h1>
       </div>
       <div className='grid md:mt-4 md:flex grid-cols-1 lg:grid-cols-4 justify-evenly items-center md:mx-auto md:p-4 gap-12'>

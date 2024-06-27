@@ -1,4 +1,4 @@
-import { Hero, JobCategories } from "@/components";
+import { Hero, JobCategories, JobpilotWork, PopularCategories } from "@/components";
 import Image from "next/image";
 
 export default function Home() {
@@ -6,6 +6,8 @@ export default function Home() {
     <main className="overflow-hidden">
       <Hero/>
       <JobCategories/>
+      <JobpilotWork/>
+      <PopularCategories/>
     </main>
   );
 }
