@@ -5,12 +5,20 @@ import { CiSearch } from 'react-icons/ci';
 import { IoLocationOutline } from 'react-icons/io5';
 import { statics } from '@/constants';
 import CountUp from 'react-countup';
+import { MotionDiv } from './MotionDiv';
+
+
+
 
 const Hero = () => {
     return (
         <div className='md:w-full md:mx-auto'>
             <div className='grid grid-cols-1 lg:grid-cols-2 justify-center items-center md:mx-auto mx-4 md:p-24 gap-28 p-4'>
-                <div className=''>
+                <MotionDiv
+                initial={{x:-100,opacity:0}}
+                whileInView={{x:0,opacity:1}}
+                transition={{delay:0.2,x:{type:"spring",stiffness:60}}}
+                className=''>
                     <h1 className='md:text-[50px] text-[30px] font-bold md:leading-[64px] leading-10 '>Find a job that suits your interest & skills.</h1>
                     <p className='text-base mt-4 leading-7 md:w-[536px]'>Aliquam vitae turpis in diam convallis finibus in at risus. Nullam in scelerisque leo, eget sollicitudin velit vestibulum.</p>
                     <div className='mt-4 md:bg-white '>
@@ -38,15 +46,20 @@ const Hero = () => {
                             <button className='bg-primary h-[56px] w-[131px] text-white text-[16px] rounded-md'>Find Job</button>
                         </form>
                     </div>
-                </div>
-                <div className=''>
+                </MotionDiv>
+                <MotionDiv
+                  initial={{ opacity: 0, scale: 0.5 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.5 }}
+                  className=''>
+                    
                     <Image
                         src='/illustration.png' 
                         alt='' 
                         height={382} 
                         width={492} 
                     />
-                </div>
+                </MotionDiv>
             </div>
             <div className='grid md:flex grid-cols-1 lg:grid-cols-4 justify-evenly items-center md:mx-14 md:space-y-0 space-y-4 '>
                 {statics.map((item, index) => (

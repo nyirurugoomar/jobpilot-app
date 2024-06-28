@@ -1,5 +1,6 @@
 import React from 'react';
 import { Categories } from '@/constants';
+import { MotionDiv } from './MotionDiv';
 
 function JobCategories() {
   const itemsPerColumn = 3;
@@ -10,8 +11,23 @@ function JobCategories() {
     columns.push(Categories.slice(i, i + itemsPerColumn));
   }
 
+  const variants ={
+    hidden:{opacity:0},
+    visible:{opacity:1}
+  }
+
   return (
-    <div className='w-full md:mx-18 md:mt-20 bg-white md:p-20'>
+    <MotionDiv
+        variants={variants}
+        initial="hidden"
+        animate="visible"
+        transition={{
+            delay:0.25,
+            ease:"easeInOut",
+            duration:0.5,
+        }}
+        viewport={{amount:0}}
+     className='w-full md:mx-18 md:mt-20 bg-white md:p-20'>
       <div className='md:ml-16 ml-2'>
         <h1 className='md:text-[40px] text-[20px] md:leading-[48px]'>Most Popular Vacancies</h1>
       </div>
@@ -27,7 +43,7 @@ function JobCategories() {
           </div>
         ))}
       </div>
-    </div>
+    </MotionDiv>
   );
 }
 
