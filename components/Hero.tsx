@@ -1,9 +1,10 @@
+'use client'
 import React from 'react';
 import Image from 'next/image';
 import { CiSearch } from 'react-icons/ci';
 import { IoLocationOutline } from 'react-icons/io5';
 import { statics } from '@/constants';
-
+import CountUp from 'react-countup';
 
 const Hero = () => {
     return (
@@ -44,16 +45,17 @@ const Hero = () => {
                         alt='' 
                         height={382} 
                         width={492} 
-                        
                     />
                 </div>
             </div>
             <div className='grid md:flex grid-cols-1 lg:grid-cols-4 justify-evenly items-center md:mx-14 md:space-y-0 space-y-4 '>
                 {statics.map((item, index) => (
-                    <div key={index} className='flex gap-4 bg-[#fbfbfb] hover:bg-white hover:shadow-lg p-4 md:w-[270px] md:mx-auto mx-6  rounded-[8px]'>
+                    <div key={index} className='flex gap-4 bg-[#fbfbfb] hover:bg-white hover:shadow-lg p-4 md:w-[270px] md:mx-auto mx-6 rounded-[8px]'>
                         <Image src={item.icon} alt='' width={72} height={72}/>
                         <div className='grid'>
-                            <h2>{item.number}</h2>
+                            <h2>
+                                <CountUp start={0} end={item.number} duration={2.75} />
+                            </h2>
                             <p>{item.text}</p>
                         </div>
                     </div>
