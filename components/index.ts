@@ -5,6 +5,7 @@ import JobCategories from "./JobCategories";
 import PopularCategories from "./PopularCategories";
 import JobpilotWork from "./JobpilotWork";
 import FeatureJob from "./FeatureJob";
+import TopCampany from "./TopCampany";
 
 
 
@@ -16,5 +17,6 @@ export{
     PopularCategories,
     JobpilotWork,
     FeatureJob,
-    
+    TopCampany,
+
 }

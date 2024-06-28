@@ -236,3 +236,37 @@ export const featuredJob=[
         "companyLocation": "Seoul, South Korea"
     }
 ]
+
+export const companies=[
+    {
+        "companyLogo":"/Dribbble-logo.png",
+        "companyName":"Dribbble",
+        "companyLocation":"Dhaka, Bangladesh"
+    },
+    {
+        "companyLogo":"/Dribbble-logo.png",
+        "companyName":"Dribbble",
+        "companyLocation":"Dhaka, Bangladesh"
+    },
+    {
+        "companyLogo":"/Dribbble-logo.png",
+        "companyName":"Dribbble",
+        "companyLocation":"Dhaka, Bangladesh"
+    },
+    {
+        "companyLogo":"/Dribbble-logo.png",
+        "companyName":"Dribbble",
+        "companyLocation":"Dhaka, Bangladesh"
+    },
+    {
+        "companyLogo":"/Dribbble-logo.png",
+        "companyName":"Dribbble",
+        "companyLocation":"Dhaka, Bangladesh"
+    },
+    {
+        "companyLogo":"/Dribbble-logo.png",
+        "companyName":"Dribbble",
+        "companyLocation":"Dhaka, Bangladesh"
+    },
+    
+]

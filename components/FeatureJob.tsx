@@ -5,7 +5,7 @@ import { featuredJob } from '@/constants';
 function FeatureJob() {
   return (
     <div className='w-full md:mx-18 bg-white md:p-20'>
-      <div className='md:flex md:justify-between justify-between items-center md:mx-0 mx-4'>
+      <div className='md:flex flex md:justify-between justify-between items-center md:mx-0 mx-4'>
         <h1 className='md:ml-8 md:text-[40px] text-[25px] md:leading-[48px]'>Featured job</h1>
         <button className='flex items-center text-primary md:gap-2 border-2 border-gray md:p-2 font-semibold'>
           View All
