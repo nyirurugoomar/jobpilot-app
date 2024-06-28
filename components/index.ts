@@ -4,6 +4,7 @@ import Hero from "./Hero";
 import JobCategories from "./JobCategories";
 import PopularCategories from "./PopularCategories";
 import JobpilotWork from "./JobpilotWork";
+import FeatureJob from "./FeatureJob";
 
 
 
@@ -14,4 +15,6 @@ export{
     JobCategories,
     PopularCategories,
     JobpilotWork,
+    FeatureJob,
+    
 }

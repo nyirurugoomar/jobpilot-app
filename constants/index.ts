@@ -137,3 +137,102 @@ export const PopularCategory =[
         "OpenPositon":"834"
     },
 ]
+
+export const featuredJob=[
+    {
+        "jobTitle": "Technical Support Specialist",
+        "jobPeriod": "part-time",
+        "jobSalary": "$20,000 - $25,000",
+        "companyLogo": "/icon-google.png",
+        "nameCompany": "Google Inc",
+        "companyLocation": "Dhaka, Bangladesh"
+    },
+    {
+        "jobTitle": "Software Engineer",
+        "jobPeriod": "full-time",
+        "jobSalary": "$80,000 - $100,000",
+        "companyLogo": "/icon-microsoft.png",
+        "nameCompany": "Microsoft",
+        "companyLocation": "Redmond, USA"
+    },
+    {
+        "jobTitle": "Data Analyst",
+        "jobPeriod": "contract",
+        "jobSalary": "$50,000 - $60,000",
+        "companyLogo": "/icon-facebook.png",
+        "nameCompany": "Facebook",
+        "companyLocation": "Menlo Park, USA"
+    },
+    {
+        "jobTitle": "Product Manager",
+        "jobPeriod": "full-time",
+        "jobSalary": "$90,000 - $120,000",
+        "companyLogo": "/icon-amazon.png",
+        "nameCompany": "Amazon",
+        "companyLocation": "Seattle, USA"
+    },
+    {
+        "jobTitle": "UX Designer",
+        "jobPeriod": "freelance",
+        "jobSalary": "$70,000 - $80,000",
+        "companyLogo": "/icon-apple.png",
+        "nameCompany": "Apple",
+        "companyLocation": "Cupertino, USA"
+    },
+    {
+        "jobTitle": "Marketing Specialist",
+        "jobPeriod": "part-time",
+        "jobSalary": "$40,000 - $50,000",
+        "companyLogo": "/icon-adobe.png",
+        "nameCompany": "Adobe",
+        "companyLocation": "San Jose, USA"
+    },
+    {
+        "jobTitle": "Network Engineer",
+        "jobPeriod": "full-time",
+        "jobSalary": "$60,000 - $75,000",
+        "companyLogo": "/icon-cisco.png",
+        "nameCompany": "Cisco",
+        "companyLocation": "San Francisco, USA"
+    },
+    {
+        "jobTitle": "Cloud Architect",
+        "jobPeriod": "full-time",
+        "jobSalary": "$110,000 - $130,000",
+        "companyLogo": "/icon-ibm.png",
+        "nameCompany": "IBM",
+        "companyLocation": "New York, USA"
+    },
+    {
+        "jobTitle": "AI Researcher",
+        "jobPeriod": "contract",
+        "jobSalary": "$120,000 - $140,000",
+        "companyLogo": "/icon-openai.png",
+        "nameCompany": "OpenAI",
+        "companyLocation": "San Francisco, USA"
+    },
+    {
+        "jobTitle": "Cybersecurity Analyst",
+        "jobPeriod": "full-time",
+        "jobSalary": "$90,000 - $110,000",
+        "companyLogo": "/icon-paloalto.png",
+        "nameCompany": "Palo Alto Networks",
+        "companyLocation": "Santa Clara, USA"
+    },
+    {
+        "jobTitle": "Database Administrator",
+        "jobPeriod": "full-time",
+        "jobSalary": "$70,000 - $85,000",
+        "companyLogo": "/icon-oracle.png",
+        "nameCompany": "Oracle",
+        "companyLocation": "Redwood City, USA"
+    },
+    {
+        "jobTitle": "Mobile Developer",
+        "jobPeriod": "full-time",
+        "jobSalary": "$80,000 - $100,000",
+        "companyLogo": "/icon-samsung.png",
+        "nameCompany": "Samsung",
+        "companyLocation": "Seoul, South Korea"
+    }
+]

@@ -12,7 +12,8 @@ const config: Config = {
     'white':"#ffffffff",
     'black':"#0000000",
     'gray':"#E4E5E8",
-    'gray-500':"#767F8C"
+    'gray-500':"#767F8C",
+    "linear":"#FFF6E6"
     },
     extend: {
       backgroundImage: {

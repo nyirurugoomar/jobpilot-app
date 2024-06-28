@@ -1,4 +1,4 @@
-import { Hero, JobCategories, JobpilotWork, PopularCategories } from "@/components";
+import { FeatureJob, Hero, JobCategories, JobpilotWork, PopularCategories } from "@/components";
 import Image from "next/image";
 
 export default function Home() {
@@ -8,6 +8,7 @@ export default function Home() {
       <JobCategories/>
       <JobpilotWork/>
       <PopularCategories/>
+      <FeatureJob/>
     </main>
   );
 }
