@@ -26,3 +26,14 @@ export async function POST(request: Request) {
     return new NextResponse(JSON.stringify({ message: "Error creating job" }), { status: 500 });
   }
 }
+
+// GET method to fetch jobs
+export async function GET() {
+    try {
+      const jobs = await Job.find({});
+      return new NextResponse(JSON.stringify(jobs), { status: 200 });
+    } catch (error) {
+      console.error('Error fetching jobs:', error);
+      return new NextResponse(JSON.stringify({ message: "Error fetching jobs" }), { status: 500 });
+    }
+  }
