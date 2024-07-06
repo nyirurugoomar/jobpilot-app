@@ -7,6 +7,7 @@ import JobpilotWork from "./JobpilotWork";
 import FeatureJob from "./FeatureJob";
 import TopCampany from "./TopCampany";
 import TestimonialSlider from "./TestimonialSlider";
+import SubHeader from "./SubHeader";
 
 
 
@@ -19,6 +20,7 @@ export{
     JobpilotWork,
     FeatureJob,
     TopCampany,
-    TestimonialSlider
+    TestimonialSlider,
+    SubHeader
 
 }

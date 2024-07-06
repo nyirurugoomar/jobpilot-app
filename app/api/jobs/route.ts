@@ -14,7 +14,7 @@ const app = express();
 
 // Middleware to parse JSON bodies
 app.use(express.json());
- 
+
 // POST method to create a job
 export async function POST(request: Request) {
   try {
@@ -61,5 +61,32 @@ export async function DELETE(request: Request) {
   } catch (error) {
     console.error('Error deleting job:', error);
     return new NextResponse(JSON.stringify({ message: "Error deleting job" }), { status: 500 });
+  }
+}
+
+// UPDATE method to update a job by ID
+export async function PUT(request: Request) {
+  try {
+    const _id = new URL(request.url).searchParams.get('id');
+    const { jobTitle, jobDescription, jobPeriod, jobSalary, companyLogo, nameCompany, companyLocation } = await request.json();
+    
+    if (!_id) {
+      return new NextResponse(JSON.stringify({ message: "Job ID is required" }), { status: 400 });
+    }
+
+    const job = await Job.findByIdAndUpdate(
+      _id, 
+      { jobTitle, jobDescription, jobPeriod, jobSalary, companyLogo, nameCompany, companyLocation },
+      { new: true, runValidators: true }
+    );
+
+    if (!job) {
+      return new NextResponse(JSON.stringify({ message: "Job not found" }), { status: 404 });
+    }
+
+    return new NextResponse(JSON.stringify({ message: "Job updated", job }), { status: 200 });
+  } catch (error) {
+    console.error('Error updating job:', error);
+    return new NextResponse(JSON.stringify({ message: "Error updating job" }), { status: 500 });
   }
 }

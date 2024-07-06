@@ -48,30 +48,12 @@ const TestimonialSlider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [cardsPerSlide, setCardsPerSlide] = useState(3); // Default number of cards per slide
 
-  useEffect(() => {
-    const handleResize = () => {
-      // Adjust cardsPerSlide based on window width
-      if (window.innerWidth <= 640) {
-        setCardsPerSlide(1); // Show one card per slide on phones (adjust as needed)
-      } else {
-        setCardsPerSlide(3); // Default to three cards per slide for larger screens
-      }
-    };
+  
 
-    // Set initial cardsPerSlide based on window width
-    handleResize();
+    
+    
 
-    // Add event listener for window resize
-    window.addEventListener('resize', handleResize);
-
-    // Clean up event listener on component unmount
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
-
-  // Check if the component should render based on screen width
-  if (window.innerWidth <= 640) {
-    return null; // Do not render the component on phone-sized screens
-  }
+  
 
   const totalSlides = Math.ceil(testimonials.length / cardsPerSlide);
 
@@ -84,7 +66,7 @@ const TestimonialSlider = () => {
   };
 
   return (
-    <div className="max-w-6xl mx-auto p-6">
+    <div className="max-w-6xl mx-auto p-6 hidden md:block">
       <div className="relative overflow-hidden">
         <div className="flex transition-transform duration-500 ease-in-out" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
           {Array.from({ length: totalSlides }).map((_, slideIndex) => (
