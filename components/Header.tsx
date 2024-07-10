@@ -1,13 +1,16 @@
 import { CiSearch } from 'react-icons/ci';
 import Image from 'next/image';
+import Link from 'next/link';
 
 function Header() {
   return (
     <div className='md:w-full bg-white'>
      <div className='grid md:mt-4 md:flex grid-cols-2 lg:grid-cols-3 justify-center space-x-10 items-center md:mx-auto mx-2 md:p-4'>
+        <Link href='/'>
         <div className=''>
-          <Image src='/Logo.png' width={143} height={40} alt=''/>
+          <Image src='/Logo.png'  width={143} height={40} alt=''/>
         </div>
+        </Link>
         <div>
         <div className=''>
             <form action='' className='md:flex grid md:space-y-0 space-y-4 border-2 border-gray rounded-[5px]  '>
@@ -35,7 +38,9 @@ function Header() {
      </div>
         </div>
         <div className='md:flex md:gap-4'>
-          <button className='border-2 border-gray h-[56px] w-[120px] text-primary text-[16px] rounded-md'>Sign in</button>
+           <a href='/SignIn'>
+           <button  className='border-2 border-gray h-[56px] w-[120px] text-primary text-[16px] hover:bg-primary hover:text-white rounded-md'>Sign in</button>
+           </a>
           <button className='bg-primary h-[56px] w-[131px] text-white text-[16px] rounded-md'>Post a Jobs</button>
         </div>
      </div>
