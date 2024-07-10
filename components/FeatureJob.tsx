@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import Image from 'next/image';
 import { FaArrowRight } from "react-icons/fa6";
 import { featuredJob } from '@/constants';
@@ -7,10 +8,11 @@ function FeatureJob() {
     <div className='w-full md:mx-18 bg-white md:p-20'>
       <div className='md:flex flex md:justify-between justify-between items-center md:mx-0 mx-4'>
         <h1 className='md:ml-8 md:text-[40px] text-[25px] md:leading-[48px]'>Featured job</h1>
+        <Link href='/AllJob'>
         <button className='flex items-center text-primary md:gap-2 border-2 border-gray md:p-2 font-semibold'>
           View All
           <FaArrowRight />
-        </button>
+        </button></Link>
       </div>
       <div className='grid md:mt-8 grid-cols-1 lg:grid-cols-3 gap-8 md:gap-6 mx-4'>
         {featuredJob.map((job, index) => (

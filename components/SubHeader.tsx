@@ -8,7 +8,7 @@ function SubHeader() {
            <div>
            <ul className='md:flex md:gap-4 md:text-[16px]  font-[400px] md:leading-[20px] text-[#5E6670] '>
             <Link href='/'><li  className='hover:underline underline-offset-8 decoration-primary decoration-4 hover:text-primary'>Home</li></Link>
-            <li className='hover:underline underline-offset-8 decoration-primary decoration-4 hover:text-primary'>Find Job</li>
+            <Link href='/AllJob'><li className='hover:underline underline-offset-8 decoration-primary decoration-4 hover:text-primary'>Find Job</li></Link>
             <li className='hover:underline underline-offset-8 decoration-primary decoration-4 hover:text-primary'>Employers</li>
             <li className='hover:underline underline-offset-8 decoration-primary decoration-4 hover:text-primary'>Candidates</li>
             <li className='hover:underline underline-offset-8 decoration-primary decoration-4 hover:text-primary'>Pricing Plans</li>
