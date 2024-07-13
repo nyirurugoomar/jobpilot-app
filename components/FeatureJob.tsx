@@ -8,6 +8,7 @@ import { FaSpinner } from 'react-icons/fa';
 import axios from "axios";
 
 interface Job {
+  _id: any;
   jobTitle: string;
   jobDescription: string;
   jobPeriod: string;
@@ -58,8 +59,11 @@ function FeatureJob() {
       </div>
       <div className="grid md:mt-8 grid-cols-1 lg:grid-cols-3 gap-8 md:gap-6 mx-4">
         {jobs.map((job, index) => (
+          <Link key={index} href={`/jobs/${job._id}`}>
+          
           <div
-            key={index}
+            
+
             className="hover:bg-gradient-to-r from-linear to-white p-4 shadow-lg border-2 border-gray cursor-pointer rounded-[8px]"
           >
             <h2 className="md:text-[18px] leading-[28px]">{job.jobTitle}</h2>
@@ -84,6 +88,8 @@ function FeatureJob() {
               </div>
             </div>
           </div>
+          </Link>
+          
         ))}
       </div>
     </div>

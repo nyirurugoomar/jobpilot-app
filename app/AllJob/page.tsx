@@ -4,6 +4,7 @@ import { FaArrowLeft, FaArrowRight, FaSpinner } from 'react-icons/fa';
 import Image from 'next/image';
 import { JobType } from '@/types/job';
 import axios from 'axios'; // Import axios for HTTP requests
+import Link from 'next/link';
 
 const jobsPerPage = 9;
 
@@ -55,8 +56,8 @@ function Page() {
   return (
     <div className='w-full md:mx-18 bg-white'>
       <div className='md:flex flex md:justify-between justify-between items-center md:mx-0 md:px-20 mx-4 bg-[#F1F2F4] md:h-[76px]'>
-        <h1 className='md:ml-8 md:text-[18px] text-[20px] md:leading-[28px]'>Find Job</h1>
-        <h1 className='md:mr-8 md:text-[18px] text-[20px] md:leading-[28px] text-gray-500'>Home / <span className='text-black'>Find job</span></h1>
+        <h1 className='md:ml-8 md:text-[15px] text-[20px] md:leading-[28px]'>Find Job</h1>
+        <code className='md:mr-8 md:text-[15px] text-[20px] md:leading-[28px] text-gray-500'><Link href='/'>Home</Link> / <span className='text-black'>Find job</span></code>
       </div>
       {loading ? (
         <div className='flex justify-center items-center h-[400px]'>
@@ -65,7 +66,8 @@ function Page() {
       ) : (
         <div className='grid md:py-10 grid-cols-1 lg:grid-cols-3 gap-8 md:gap-6 mx-4 md:mx-24'>
           {jobsToShow.map((job, index) => (
-            <div key={index} className='hover:bg-gradient-to-r from-linear to-white p-4 shadow-lg border-2 border-gray cursor-pointer rounded-[8px]'>
+          <Link key={index} href={`/jobs/${job._id}`} >
+           <div  className='hover:bg-gradient-to-r from-linear to-white p-4 shadow-lg border-2 border-gray cursor-pointer rounded-[8px]'>
               <h2 className='md:text-[18px] leading-[28px]'>{job.jobTitle}</h2>
               <div className='flex gap-4 items-center'>
                 <h3 className='text-[#0BA02C] md:text-[12px] bg-[#E7F6EA] p-1 font-semibold'>{job.jobPeriod}</h3>
@@ -84,6 +86,8 @@ function Page() {
                 </div>
               </div>
             </div>
+          </Link>
+            
           ))}
         </div>
       )}

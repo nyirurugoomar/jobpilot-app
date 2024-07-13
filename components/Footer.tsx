@@ -24,10 +24,10 @@ function Footer() {
             <li className="hover:text-white flex items-center">
               Contact
             </li>
-            <li className="hover:text-white flex items-center">
+            <li className="hover:text-white  flex items-center">
               Pricing
             </li>
-            <li className="hover:text-white flex items-center">
+            <li className="hover:text-white cursor-pointer flex items-center">
               Blog
             </li>
           </ul>
@@ -36,16 +36,16 @@ function Footer() {
         <div className="text-[#9199A3] md:space-y-4">
           <h2 className="text-white text-[20px]">Candidate</h2>
           <ul className="text-[16px]">
-            <li className="hover:text-white flex items-center">
+            <li className="hover:text-white cursor-pointer flex items-center">
               Browse Jobs
             </li>
-            <li className="hover:text-white flex items-center">
+            <li className="hover:text-white cursor-pointer flex items-center">
               Browse Employers
             </li>
-            <li className="hover:text-white flex items-center">
+            <li className="hover:text-white cursor-pointer flex items-center">
               Candidate Dashboard
             </li>
-            <li className="hover:text-white flex items-center">
+            <li className="hover:text-white cursor-pointer flex items-center">
               Saved Jobs
             </li>
           </ul>
@@ -54,16 +54,16 @@ function Footer() {
         <div className="text-[#9199A3] md:space-y-4">
           <h2 className="text-white text-[20px]">Employers</h2>
           <ul className="text-[16px]">
-            <li className="hover:text-white flex items-center">
+            <li className="hover:text-white cursor-pointer  flex items-center">
               Post a Job
             </li>
-            <li className="hover:text-white flex items-center">
+            <li className="hover:text-white cursor-pointer  flex items-center">
               Browse Candidates
             </li>
-            <li className="hover:text-white flex items-center">
+            <li className="hover:text-white cursor-pointer  flex items-center">
               Employers Dashboard
             </li>
-            <li className="hover:text-white flex items-center">
+            <li className="hover:text-white cursor-pointer  flex items-center">
               Applications
             </li>
           </ul>

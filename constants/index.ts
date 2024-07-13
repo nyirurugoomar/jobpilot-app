@@ -165,6 +165,8 @@ export const featuredJob=[
     },
     {
         "jobTitle": "Product Manager",
+        "jobDescription": "it Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget",
+
         "jobPeriod": "full-time",
         "jobSalary": "$90,000 - $120,000",
         "companyLogo": "/icon-amazon.png",
@@ -173,6 +175,8 @@ export const featuredJob=[
     },
     {
         "jobTitle": "UX Designer",
+        "jobDescription": "it Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget",
+
         "jobPeriod": "freelance",
         "jobSalary": "$70,000 - $80,000",
         "companyLogo": "/icon-apple.png",
@@ -181,6 +185,8 @@ export const featuredJob=[
     },
     {
         "jobTitle": "Marketing Specialist",
+        "jobDescription": "it Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget",
+
         "jobPeriod": "part-time",
         "jobSalary": "$40,000 - $50,000",
         "companyLogo": "/icon-adobe.png",
@@ -189,6 +195,7 @@ export const featuredJob=[
     },
     {
         "jobTitle": "Network Engineer",
+        "jobDescription": "it Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget",
         "jobPeriod": "full-time",
         "jobSalary": "$60,000 - $75,000",
         "companyLogo": "/icon-cisco.png",
@@ -197,6 +204,7 @@ export const featuredJob=[
     },
     {
         "jobTitle": "Cloud Architect",
+        "jobDescription": "it Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget",
         "jobPeriod": "full-time",
         "jobSalary": "$110,000 - $130,000",
         "companyLogo": "/icon-ibm.png",
@@ -205,6 +213,7 @@ export const featuredJob=[
     },
     {
         "jobTitle": "AI Researcher",
+        "jobDescription": "it Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget",
         "jobPeriod": "contract",
         "jobSalary": "$120,000 - $140,000",
         "companyLogo": "/icon-openai.png",
@@ -213,6 +222,7 @@ export const featuredJob=[
     },
     {
         "jobTitle": "Cybersecurity Analyst",
+        "jobDescription": "it Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget",
         "jobPeriod": "full-time",
         "jobSalary": "$90,000 - $110,000",
         "companyLogo": "/icon-paloalto.png",
@@ -221,6 +231,7 @@ export const featuredJob=[
     },
     {
         "jobTitle": "Database Administrator",
+        "jobDescription": "it Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget",
         "jobPeriod": "full-time",
         "jobSalary": "$70,000 - $85,000",
         "companyLogo": "/icon-oracle.png",
@@ -229,6 +240,7 @@ export const featuredJob=[
     },
     {
         "jobTitle": "Mobile Developer",
+        "jobDescription": "it Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget",
         "jobPeriod": "full-time",
         "jobSalary": "$80,000 - $100,000",
         "companyLogo": "/icon-samsung.png",
