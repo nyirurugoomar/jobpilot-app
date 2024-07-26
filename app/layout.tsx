@@ -1,29 +1,27 @@
-import type { Metadata } from "next";
+'use client';
 
+import { usePathname } from "next/navigation";
 import "./globals.css";
 import { Footer, Header, SubHeader } from "@/components";
-
-
-
-
-export const metadata: Metadata = {
-  title: "JobPilot ",
-  description: "It application that advertise Job",
-};
 
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const pathname = usePathname();
+  const noLayoutRoutes = ['/Login', '/SignUp'];
+
+  const showLayout = !noLayoutRoutes.includes(pathname);
+
   return (
     <html lang="en">
       <body>
-        <SubHeader/>
-        <Header/>
+        {showLayout && <SubHeader />}
+        {showLayout && <Header />} 
         {children}
-        <Footer/>
-        </body>
+        {showLayout && <Footer />}
+      </body>
     </html>
   );
 }
