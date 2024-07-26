@@ -7,14 +7,18 @@ import { FaSpinner } from "react-icons/fa";
 import Link from "next/link";
 
 interface Job {
-  jobTitle: string;
-  jobDescription: string;
-  jobPeriod: string;
-  jobSalary: string;
-  companyLogo: string;
-  nameCompany: string;
-  companyLocation: string;
-  postedDate: Date;
+    jobTitle: string;
+    jobPeriod: string;
+    jobSalary: string;
+    companyLogo: string;
+    jobDescription:string;
+    nameCompany: string;
+    companyLocation: string;
+    jobExprience:string;
+    jobEducation:string;
+    jobLevel:string;
+    jobExpire:Date;
+    postedDate: Date;
 }
 
 const JobDetail = () => {

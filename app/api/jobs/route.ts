@@ -1,6 +1,4 @@
-// app/api/jobs/route.ts
 import { NextRequest, NextResponse } from 'next/server';
-// import connectDB from '../../../utils/mongodb';
 import connectDB from '@/libs/mongodb';
 import { getJobs, createJob } from '../../../controllers/jobController';
 

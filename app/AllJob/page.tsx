@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { FaArrowLeft, FaArrowRight, FaSpinner } from 'react-icons/fa';
 import Image from 'next/image';
 import { JobType } from '@/types/job';
-import axios from 'axios'; // Import axios for HTTP requests
+import axios from 'axios'; // I
 import Link from 'next/link';
 
 const jobsPerPage = 9;

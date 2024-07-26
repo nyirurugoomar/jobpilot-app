@@ -4,7 +4,7 @@ import { getJobById, updateJob, deleteJob } from '../../../../controllers/jobCon
 
 export async function GET(req: NextRequest) {
   await connectDB();
-  const id = req.nextUrl.searchParams.get('id'); // Extract ID from query parameters
+  const id = req.nextUrl.searchParams.get('id'); 
 
   if (!id) {
     return NextResponse.json({ error: 'Invalid ID' }, { status: 400 });
@@ -20,20 +20,20 @@ export async function GET(req: NextRequest) {
 
 export async function PUT(req: NextRequest) {
   await connectDB();
-  const id = req.nextUrl.searchParams.get('id'); // Extract ID from query parameters
+  const id = req.nextUrl.searchParams.get('id'); 
 
   if (!id) {
     return NextResponse.json({ error: 'Invalid ID' }, { status: 400 });
   }
 
-  const job = await req.json(); // Parse JSON body
+  const job = await req.json(); 
   const result = await updateJob(id, job);
   return NextResponse.json(result, { status: 200 });
 }
 
 export async function DELETE(req: NextRequest) {
   await connectDB();
-  const id = req.nextUrl.searchParams.get('id'); // Extract ID from query parameters
+  const id = req.nextUrl.searchParams.get('id'); 
 
   if (!id) {
     return NextResponse.json({ error: 'Invalid ID' }, { status: 400 });

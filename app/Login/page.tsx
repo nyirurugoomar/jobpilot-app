@@ -1,38 +1,44 @@
 'use client';
 import React, { useEffect, useState } from 'react';
-import Link from 'next/link';
+import Link from "next/link";
 import { useRouter } from 'next/navigation';
 import axios from 'axios';
 import toast from 'react-hot-toast';
 
-function SignupPage() {
+function Login() {
   const router = useRouter();
   const [user, setUser] = useState({
     email: "",
-    password: "",
-    username: ""
+    password: ""
   });
   const [buttonDisabled, setButtonDisabled] = useState(false);
   const [loading, setLoading] = useState(false);
 
-  const onSignup = async (e: { preventDefault: () => void; }) => {
-    e.preventDefault(); // Prevent default form submission
+  const onLogin = async (e: { preventDefault: () => void; }) => {
+    e.preventDefault();
     try {
       setLoading(true);
-      const response = await axios.post("/api/users/signup", user);
-      console.log("Signup success", response.data);
-      toast.success("Signup successful!");
-      router.push("/Login");
+      const response = await axios.post("/api/users/login", user);
+      console.log("Login success", response.data);
+      toast.success("Login successful!");
+      // Assuming the response contains a token or user data, you might want to save it in localStorage or context
+      //localStorage.setItem('token', response.data.token);
+      router.push("/profile");
     } catch (error:any) {
-      console.log("Signup failed", error.message);
-      toast.error(error.message);
+      console.error("Login failed", error.message);
+      if (error.response) {
+        console.error("Error response data:", error.response.data);
+        toast.error(`Error: ${error.response.data.message}`);
+      } else {
+        toast.error("An unexpected error occurred.");
+      }
     } finally {
       setLoading(false);
     }
   };
 
   useEffect(() => {
-    if (user.email.length > 0 && user.password.length > 0 && user.username.length > 0) {
+    if (user.email.length > 0 && user.password.length > 0) {
       setButtonDisabled(false);
     } else {
       setButtonDisabled(true);
@@ -42,17 +48,9 @@ function SignupPage() {
   return (
     <div className="md:p-20 p-3 max-w-lg mx-auto bg-primary m-10 rounded-[10px]">
       <h1 className="text-3xl text-center font-semibold my-7 text-white">
-        {loading ? "Processing..." : "Signup"}
+        {loading ? "Processing..." : "Login"}
       </h1>
-      <form className="flex flex-col gap-4" onSubmit={onSignup}>
-        <input
-          type="text"
-          placeholder="Username"
-          id="username"
-          value={user.username}
-          onChange={(e) => setUser({ ...user, username: e.target.value })}
-          className="bg-slate-100 p-3 rounded-lg"
-        />
+      <form className="flex flex-col gap-4">
         <input
           type="email"
           placeholder="Email"
@@ -72,15 +70,16 @@ function SignupPage() {
         <button
           type="submit"
           disabled={buttonDisabled}
-          className="bg-black text-white p-3 rounded-lg hover:opacity-95 disabled:opacity-80"
+          onClick={onLogin}
+          className="bg-black text-white p-3 rounded-lg uppercase hover:opacity-95 disabled:opacity-80"
         >
-          {buttonDisabled ? "Wait" : "SignUp"}
+          {buttonDisabled ? "Wait" : "Login"}
         </button>
       </form>
       <div className="flex gap-2 mt-5">
-        <p className="text-white">Have an Account?</p>
-        <Link href='/login'>
-          <span className="text-blue-500">Sign in</span>
+        <p className="text-white">Don't have an account?</p>
+        <Link href='/SignUp'>
+          <span className="text-blue-500">Sign up</span>
         </Link>
       </div>
       <p className="text-red-600 mt-5"></p>
@@ -88,4 +87,4 @@ function SignupPage() {
   );
 }
 
-export default SignupPage;
+export default Login;
