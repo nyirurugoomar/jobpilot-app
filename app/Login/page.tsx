@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useRouter } from 'next/navigation';
 import axios from 'axios';
 import toast from 'react-hot-toast';
-import { FaSpinner } from "react-icons/fa";
+import { FaSpinner, FaTimes } from "react-icons/fa";
 
 function Login() {
   const router = useRouter();
@@ -20,7 +20,7 @@ function Login() {
     e.preventDefault();
     try {
       setLoading(true);
-      setErrorMessage(""); // Clear previous error messages
+      setErrorMessage(""); 
       const response = await axios.post("/api/users/login", user);
       console.log("Login success", response.data);
       toast.success("Login successful!");
@@ -52,6 +52,12 @@ function Login() {
     <div className='w-screen h-screen bg-bg-login bg-cover flex justify-center items-center'>
       {/* card */}
       <div className="md:p-20 p-3 max-w-lg w-full bg-white rounded-[10px] mx-3">
+      <button
+          onClick={() => router.push('/')}
+          className="absolute top-3 right-3 text-white hover:text-gray-700"
+        >
+          <FaTimes size={50} />
+        </button>
         <h1 className="text-3xl text-center font-semibold my-7 text-primary">
           {loading 
           ?
