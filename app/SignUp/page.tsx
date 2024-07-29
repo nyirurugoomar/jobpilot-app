@@ -55,7 +55,7 @@ function SignupPage() {
       <div className="md:p-20 p-3 max-w-lg w-full bg-white mx-auto  m-10 rounded-[10px]">
       <button
           onClick={() => router.push('/')}
-          className="absolute top-3 right-3 text-white hover:text-gray-700"
+          className="absolute top-3 right-3 text-white hover:text-gray-700 md:animate-bounce"
         >
           <FaTimes size={50} />
         </button>

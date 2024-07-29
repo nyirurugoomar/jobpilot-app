@@ -54,7 +54,7 @@ function Login() {
       <div className="md:p-20 p-3 max-w-lg w-full bg-white rounded-[10px] mx-3">
       <button
           onClick={() => router.push('/')}
-          className="absolute top-3 right-3 text-white hover:text-gray-700"
+          className="absolute top-3 right-3 text-white hover:text-gray-700 md:animate-bounce"
         >
           <FaTimes size={50} />
         </button>

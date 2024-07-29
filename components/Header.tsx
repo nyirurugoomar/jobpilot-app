@@ -49,7 +49,9 @@ function Header() {
           <a href='/Login'>
             <button className='border-2 border-gray h-[56px] w-[120px] text-primary text-[16px] hover:bg-primary hover:text-white rounded-md'>Sign in</button>
           </a>
+          <a href='/postJob'>
           <button className='bg-primary h-[56px] w-[131px] text-white text-[16px] rounded-md'>Post a Job</button>
+          </a>
         </div>
       </div>
     </div>
