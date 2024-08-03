@@ -20,13 +20,17 @@ const jobSchema = new Schema<JobDocument>({
     jobDescription: { type: String, required: true },
     jobPeriod: { type: String, required: true },
     jobSalary: { type: String, required: true },
-    companyLogo: { type: String, required: true },
+    companyLogo: {
+        type: String,
+        required: true,
+        default: '/Icon1.png'
+    },
     nameCompany: { type: String, required: true },
     companyLocation: { type: String, required: true },
-    jobExprience:{type: String,required:true},
-    jobEducation:{type: String,required:true},
-    jobLevel:{type: String,required:true},
-    jobExpire:{ type: Date,required:true},
+    jobExprience: { type: String, required: true },
+    jobEducation: { type: String, required: true },
+    jobLevel: { type: String, required: true },
+    jobExpire: { type: Date, required: true },
     postedDate: { type: Date, default: Date.now },
 });
 

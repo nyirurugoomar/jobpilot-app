@@ -178,7 +178,11 @@ const JobDetail = () => {
                 Job expire in:
                 </p>
                 <h3 className="md:text-[16px] text-[#18191C] md:leading-[24px] ">
-                14 Aug, 2021
+                {new Date(job.jobExpire).toLocaleDateString("en-GB", {
+                    day: "2-digit",
+                    month: "short",
+                    year: "numeric",
+                  })}
                 </h3>
               </div>
               <div className="md:w-[140px] space-y-2">
@@ -191,8 +195,8 @@ const JobDetail = () => {
                 <p className="text-[#767F8C] uppercase md:text-[14px] md:leading-[20px]">
                 Job Level:
                 </p>
-                <h3 className="md:text-[16px] text-[#18191C] md:leading-[24px] ">
-                Entry Level
+                <h3 className="md:text-[16px] uppercase text-[#18191C] md:leading-[24px] ">
+                {job.jobLevel}
                 </h3>
               </div>
               <div className="md:w-[140px] space-y-2">
@@ -205,8 +209,8 @@ const JobDetail = () => {
                 <p className="text-[#767F8C] uppercase md:text-[14px] md:leading-[20px]">
                 Experience
                 </p>
-                <h3 className="md:text-[16px] text-[#18191C] md:leading-[24px] ">
-                  1-3 years
+                <h3 className="md:text-[16px] uppercase text-[#18191C] md:leading-[24px] ">
+                  {job.jobExprience}
                 </h3>
               </div>
               <div className="md:w-[140px] space-y-2">
@@ -219,8 +223,8 @@ const JobDetail = () => {
                 <p className="text-[#767F8C] uppercase md:text-[14px] md:leading-[20px]">
                 Education
                 </p>
-                <h3 className="md:text-[16px] text-[#18191C] md:leading-[24px] ">
-                  Masters Degree
+                <h3 className="md:text-[16px] uppercase text-[#18191C] md:leading-[24px] ">
+                  {job.jobEducation}
                 </h3>
               </div>
             </div>

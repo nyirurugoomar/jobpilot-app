@@ -1,4 +1,3 @@
-// controllers/jobController.ts
 import Job from '../models/jobModel';
 import { JobDocument } from '../models/jobModel';
 
@@ -10,7 +9,7 @@ export const getJobById = async (id: string) => {
   return await Job.findById(id).exec();
 };
 
-export const createJob = async (job: JobDocument) => {
+export const createJob = async (job: Partial<JobDocument>) => {
   const newJob = new Job(job);
   return await newJob.save();
 };
