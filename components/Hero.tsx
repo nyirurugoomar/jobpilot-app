@@ -54,7 +54,7 @@ const Hero = () => {
                   className=''>
                     
                     <Image
-                        src='/illustration.png' 
+                        src='/Illustration.png' 
                         alt='' 
                         height={382} 
                         width={492} 

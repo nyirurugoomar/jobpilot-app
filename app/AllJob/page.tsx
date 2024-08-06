@@ -91,31 +91,32 @@ function Page() {
           ))}
         </div>
       )}
-      <div className='md:flex justify-center md:gap-2 md:pb-6'>
-        <button
-          onClick={handlePrevPage}
-          className={`text-primary hover:bg-[#E7F0FA] md:h-[48px] md:w-[48px] rounded-full items-center justify-center md:flex ${currentPage === 1 ? 'opacity-50 cursor-not-allowed' : ''}`}
-          disabled={currentPage === 1}
-        >
-          <FaArrowLeft size={24}/>
-        </button>
-        {Array.from({ length: totalPages }, (_, index) => (
-          <button
-            key={index + 1}
-            onClick={() => handlePageClick(index + 1)}
-            className={`hover:bg-[#F1F2F4] rounded-full md:h-[48px] md:w-[48px] ${currentPage === index + 1 ? 'bg-primary text-white' : ''}`}
-          >
-            {index + 1}
-          </button>
-        ))}
-        <button
-          onClick={handleNextPage}
-          className={`text-primary hover:bg-[#E7F0FA] md:h-[48px] md:w-[48px] rounded-full items-center justify-center flex ${currentPage === totalPages ? 'opacity-50 cursor-not-allowed' : ''}`}
-          disabled={currentPage === totalPages}
-        >
-          <FaArrowRight size={24} />
-        </button>
-      </div>
+      <div className="flex justify-center gap-2 pb-6 md:pb-6 md:mt-0 mt-6">
+  <button
+    onClick={handlePrevPage}
+    className={`text-primary hover:bg-[#E7F0FA] h-10 w-10 md:h-[48px] md:w-[48px] rounded-full flex items-center justify-center ${currentPage === 1 ? 'opacity-50 cursor-not-allowed' : ''}`}
+    disabled={currentPage === 1}
+  >
+    <FaArrowLeft size={24}/>
+  </button>
+  {Array.from({ length: totalPages }, (_, index) => (
+    <button
+      key={index + 1}
+      onClick={() => handlePageClick(index + 1)}
+      className={`hover:bg-[#F1F2F4] rounded-full h-10 w-10 md:h-[48px] md:w-[48px] flex items-center justify-center ${currentPage === index + 1 ? 'bg-primary text-white' : ''}`}
+    >
+      {index + 1}
+    </button>
+  ))}
+  <button
+    onClick={handleNextPage}
+    className={`text-primary hover:bg-[#E7F0FA] h-10 w-10 md:h-[48px] md:w-[48px] rounded-full flex items-center justify-center ${currentPage === totalPages ? 'opacity-50 cursor-not-allowed' : ''}`}
+    disabled={currentPage === totalPages}
+  >
+    <FaArrowRight size={24} />
+  </button>
+</div>
+
     </div>
   );
 }
