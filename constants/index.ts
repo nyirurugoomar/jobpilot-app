@@ -1,21 +1,21 @@
 export const statics =[
     {
-        "icon":"/icon1.png",
+        "icon":"/Icon1.png",
         "number":175324,
         "text":"Live Job"
     },
     {
-        "icon":"/icon2.png",
+        "icon":"/Icon2.png",
         "number":97354,
         "text":"Companies"
     },
     {
-        "icon":"/icon3.png",
+        "icon":"/Icon3.png",
         "number":3847154,
         "text":"Candidates"
     },
     {
-        "icon":"/icon1.png",
+        "icon":"/Icon1.png",
         "number":7532,
         "text":"New Jobs"
     },
@@ -74,22 +74,22 @@ export const Categories=[
 
 export const WorkProcess =[
     {
-        "icon":"/icon-person.png",
+        "icon":"/Icon-person.png",
         "title":"Create account",
         "info":"Aliquam facilisis egestas sapien, nec tempor leo tristique at."
     },
     {
-        "icon":"/icon-upload.png",
+        "icon":"/Icon-upload.png",
         "title":"Upload CV/Resume",
         "info":"Curabitur sit amet maximus ligula. Nam a nulla ante. Nam sodales"
     },
     {
-        "icon":"/icon-search.png",
+        "icon":"/Icon-search.png",
         "title":"Find suitable job",
         "info":"Phasellus quis eleifend ex. Morbi nec fringilla nibh."
     },
     {
-        "icon":"/icon-apply.png",
+        "icon":"/Icon-apply.png",
         "title":"Apply job",
         "info":"Curabitur sit amet maximus ligula. Nam a nulla ante, Nam sodales purus."
     }
@@ -97,27 +97,27 @@ export const WorkProcess =[
 
 export const PopularCategory =[
     {
-        "icon":"/icon-Design.png",
+        "icon":"/Icon-Design.png",
         "title":"Graphics & Design",
         "OpenPositon":"357"
     },
     {
-        "icon":"/icon-code.png",
+        "icon":"/Icon-code.png",
         "title":"Code & Programing",
         "OpenPositon":"312"
     },
     {
-        "icon":"/icon-Digital.png",
+        "icon":"/Icon-Digital.png",
         "title":"Digital Marketing",
         "OpenPositon":"463"
     },
     {
-        "icon":"/icon-Video.png",
+        "icon":"/Icon-Video.png",
         "title":"Video & Animation",
         "OpenPositon":"588"
     },
     {
-        "icon":"/icon-Music.png",
+        "icon":"/Icon-Music.png",
         "title":"Music & Audio",
         "OpenPositon":"184"
     },
