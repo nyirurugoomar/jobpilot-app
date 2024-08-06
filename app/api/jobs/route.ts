@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import connectDB from '@/libs/mongodb';
 import { getJobs, createJob } from '../../../controllers/jobController';
 import { JobDocument } from '../../../models/jobModel';
+import { authMiddleware } from '../../../controllers/authMiddleware';
 
 function mapJsonToJobDocument(data: any): Partial<JobDocument> {
   return {
@@ -26,6 +27,9 @@ export async function GET(req: NextRequest) {
 }
 
 export async function POST(req: NextRequest) {
+  const authResult = await authMiddleware(req);
+  if (authResult) return authResult;
+
   await connectDB();
   try {
     const data = await req.json(); // Parse JSON body

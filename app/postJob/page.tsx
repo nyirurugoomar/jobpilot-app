@@ -173,7 +173,7 @@ function Page() {
               type="text"
               value={job.jobExprience}
               onChange={(e) => setJob({ ...job, jobExprience: e.target.value })}
-              placeholder="Ex: At least 5 years"
+              placeholder="Ex: 5 "
               className="border-gray border-[1.5px] h-14 p-3 w-full rounded-lg outline-none"
             />
           </div>
@@ -210,7 +210,7 @@ function Page() {
           </div>
         </div>
 
-        {errorMessage && <div className="text-red-500">{errorMessage}</div>}
+        {errorMessage && <div className="text-[#FF0000]">{errorMessage}</div>}
 
         <button
           type="submit"

@@ -210,7 +210,7 @@ const JobDetail = () => {
                 Experience
                 </p>
                 <h3 className="md:text-[16px] uppercase text-[#18191C] md:leading-[24px] ">
-                  {job.jobExprience}
+                {job.jobExprience}
                 </h3>
               </div>
               <div className="md:w-[140px] space-y-2">
