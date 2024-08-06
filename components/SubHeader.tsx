@@ -17,7 +17,7 @@ function SubHeader() {
            </div>
            <div className='md:flex md:gap-2 md:text-[16px]  font-[400px] md:leading-[20px]'>
              <h3>+1-202-555-0178</h3>
-             <button>selector butto</button>
+             
            </div>
         </div>
     </div>

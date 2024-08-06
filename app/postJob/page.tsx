@@ -93,8 +93,8 @@ function Page() {
       </div>
 
       <form onSubmit={onPostJob} className="p-20 space-y-10">
-        <div className="flex justify-center gap-20">
-          <div className="w-full">
+        <div className="md:flex justify-center gap-20">
+          <div className="md:w-full">
             <label className="block mb-2 text-sm font-medium text-gray-700">Job Title</label>
             <input
               type="text"
@@ -115,7 +115,7 @@ function Page() {
             />
           </div>
         </div>
-        <div className="flex justify-center gap-10">
+        <div className="md:flex justify-center gap-10">
           <div className="w-full">
             <label className="block mb-2 text-sm font-medium text-gray-700">Job Period</label>
             <input
@@ -166,7 +166,7 @@ function Page() {
             placeholder="Your description"
           />
         </div>
-        <div className="flex justify-center gap-20">
+        <div className="md:flex justify-center gap-20">
           <div className="w-full">
             <label className="block mb-2 text-sm font-medium text-gray-700">Experience</label>
             <input
@@ -188,7 +188,7 @@ function Page() {
             />
           </div>
         </div>
-        <div className="flex justify-center gap-20">
+        <div className="md:flex justify-center gap-20">
           <div className="w-full">
             <label className="block mb-2 text-sm font-medium text-gray-700">Level</label>
             <input

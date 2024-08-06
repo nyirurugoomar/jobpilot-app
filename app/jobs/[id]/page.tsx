@@ -55,22 +55,22 @@ const JobDetail = () => {
   }
   return (
     <div className="w-full ">
-      <div className="md:flex flex md:justify-between justify-between items-center md:mx-0 md:px-20 mx-4 bg-[#F1F2F4] md:h-[76px]">
+      <div className="md:flex flex md:justify-between justify-between items-center md:mx-0 md:px-20 mx-4 bg-[#F1F2F4] md:h-[76px] hidden md:block">
         <div>
-          <h1 className="md:ml-8 md:text-[15px] text-[20px] md:leading-[28px]">
+          <h1 className="md:ml-8 md:text-[15px] text-[10px] md:leading-[28px]">
             Job Details
           </h1>
         </div>
-        <div className="flex gap-4 items-center ">
-          <code className="md:mr-8 md:text-[15px] text-[20px] md:leading-[20px] text-gray-500">
+        <div className="flex gap-4 items-center  ">
+          <code className="md:mr-8 md:text-[15px]  md:leading-[20px] text-gray-500">
             <Link href='/'>Home</Link> / <Link href='/AllJob'>Find Job</Link> / {job.jobTitle}{" "}
             <span className="text-[#18191C]"> / Job Details</span>{" "}
           </code>
         </div>
       </div>
-      <div className="md:h-[1396px] bg-white md:pt-10">
-        <div className="md:flex flex md:justify-between justify-between items-center md:mx-0 md:px-20 mx-4  md:h-[76px]  ">
-          <div className="flex gap-6">
+      <div className="md:h-[1396px] bg-white md:pt-10 pt-10">
+        <div className="md:flex grid md:justify-between justify-between items-center md:mx-0 md:px-20 mx-4  md:h-[76px]  ">
+          <div className="md:flex gap-6">
             <Image
               src={job.companyLogo}
               className="rounded-full"
@@ -82,20 +82,20 @@ const JobDetail = () => {
               <h2 className="md:text-[28px] md:leading-[32px]">
                 {job.jobTitle}
               </h2>
-              <div className="md:flex gap-2">
+              <div className="md:flex flex gap-2 items-center">
                 <p className="md:text-[18px] md:leading-[28px]">
                   at {job.nameCompany}
                 </p>
                 <h3 className="text-white md:text-[15px] items-center justify-start flex uppercase bg-[#0BA02C] p-2 md:h-[30px] md:w-[98px] font-semibold rounded-[3px]">
                   {job.jobPeriod}
                 </h3>
-                <h3 className="text-[#E05151] md:text-[14px] items-center justify-center flex  bg-[#FCEEEE] p-2 md:h-[30px] md:w-[98px] font-semibold rounded-[52px]">
+                <h3 className="text-[#E05151] md:text-[14px] items-center justify-center flex  bg-[#FCEEEE] p-2 md:h-[30px] md:w-[98px] font-semibold md:rounded-[52px]">
                   Featured
                 </h3>
               </div>
             </div>
           </div>
-          <div className="md:flex gap-4">
+          <div className="md:flex flex md:gap-4 gap-10 md:mt-0 mt-6">
             <div className="md:h-[56px] md:w-[56px] bg-[#E7F0FA] p-2 items-center flex justify-center rounded-[4px] shadow-sm">
               <Image
                 src="/vector12.png"
@@ -110,7 +110,7 @@ const JobDetail = () => {
             </button>
           </div>
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-2 justify-center  md:mx-auto mx-4 md:p-24 gap-28 p-4">
+        <div className="md:grid grid-cols-1 lg:grid-cols-2 justify-center  md:mx-auto mx-4 md:p-24 gap-28 p-4">
           <div className="">
             <h2 className="md:text-[18px] md:leading-[28px] text-[#18191C]">
               Job Description

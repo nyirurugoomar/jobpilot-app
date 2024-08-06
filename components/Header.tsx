@@ -12,7 +12,7 @@ function Header() {
 
   return (
     <div className='md:w-full bg-white'>
-      <div className='grid md:mt-4 md:flex grid-cols-2 lg:grid-cols-3 justify-center space-x-10 items-center md:mx-auto mx-2 md:p-4'>
+      <div className='md:mt-4 md:flex grid-cols-2 lg:grid-cols-3 justify-center space-x-10 items-center md:mx-auto mx-2 md:p-4'>
         <Link href='/'>
           <div className=''>
             <Image src='/Logo.png' width={143} height={40} alt=''/>
@@ -20,7 +20,7 @@ function Header() {
         </Link>
         <div>
           <div className=''>
-            <form action='' className='md:flex grid md:space-y-0 space-y-4 border-2 border-gray rounded-[5px]'>
+            <form action='' className='md:flex md:space-y-0 space-y-4 border-2 border-gray rounded-[5px]'>
               <div className='relative'>
                 <PhoneInput
                   international
@@ -32,7 +32,7 @@ function Header() {
                   placeholder='Select country'
                 />
               </div>
-              <div className='relative'>
+              <div className='relative border-2 md:border-0 border-gray'>
                 <input
                   type='text'
                   className='w-full mt-[2.1px] h-[50px] py-2 px-8 text-[16px] rounded-sm focus:outline-none md:w-[668px] p-6'
@@ -45,7 +45,7 @@ function Header() {
             </form>
           </div>
         </div>
-        <div className='md:flex md:gap-4'>
+        <div className='md:flex md:gap-4 md:space-x-0 space-x-4 md:mt-0 mt-4  '>
           <a href='/Login'>
             <button className='border-2 border-gray h-[56px] w-[120px] text-primary text-[16px] hover:bg-primary hover:text-white rounded-md'>Sign in</button>
           </a>
