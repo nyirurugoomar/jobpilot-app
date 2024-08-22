@@ -55,7 +55,7 @@ const JobDetail = () => {
   }
   return (
     <div className="w-full ">
-      <div className="md:flex flex md:justify-between justify-between items-center md:mx-0 md:px-20 mx-4 bg-[#F1F2F4] md:h-[76px] hidden md:block">
+      <div className="flex md:justify-between justify-between items-center md:mx-0 md:px-20 mx-4 bg-[#F1F2F4] md:h-[76px] md:block">
         <div>
           <h1 className="md:ml-8 md:text-[15px] text-[10px] md:leading-[28px]">
             Job Details
