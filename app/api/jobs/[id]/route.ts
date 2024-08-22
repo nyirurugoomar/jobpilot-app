@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import connectDB from '@/libs/mongodb';
-import { getJobById, updateJob, deleteJob } from '../../../../controllers/jobController';
+import { getJobById, updateJob, deleteJob } from '@/controllers/jobController';
 
 export async function GET(req: NextRequest) {
   await connectDB();
